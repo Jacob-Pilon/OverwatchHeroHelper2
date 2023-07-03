@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch2 Hero Helper</title>
+
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Dynamic text field update based on rank -->
+    <script>
+        function updateTextField() {
+          var selectElement = document.getElementById("mySelect");
+          var textField = document.getElementById("myTextField");
+          var selectedOption = selectElement.options[selectElement.selectedIndex];
+          var customValue = selectedOption.getAttribute("data-value");
+          var data2Value = selectedOption.getAttribute("data2-value");
+          if(data2Value!=null){
+            textField.value=data2Value;
+          }
+          else{
+            textField.value = customValue;
+          }
+          
+    
+        }
+        </script>
+
+    
+
+</head>
+
+<body style="background-color: #218FFE;">
+
+<!-- Navbar -->
+    <div class="container-fluid" style="height: 80px;">
+        <div class="row" >
+            <!-- Navbar Image and text (focus on centering the text with the logo) -->
+            <nav class="navbar" style="background-color:#2f77be; border:none ; height:80px;">
+                <a class="navbar-logo" href="index.html" alt="Logo">
+                    <img src="images/logo.png" style="background-color: black; object-fit: contain; height:80px">
+                </a>
+                <span style="padding-right: 65%; color:white; ">Overwatch 2 hero helper</span>
+                <input type="text" placeholder="Search for a hero" style="width: 200px; font-size: 10px;">
+                <button type="submit">Search</button>
+                
+                    
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Actual new nav bar -->
+        <div class="row">
+            <div class="col-sm-12" style="background-color: #F99E1A; height: 100vh; width: 80px; box-sizing: border-box;" >
+                <a class="navbar-logos" href="tierlist.html" alt="Logo" style="margin-top: 10px;">
+                    <img src="images/list.png" style="object-fit: contain; height:50px; margin-top: 10px;">
+                </a>
+                <a class="navbar-logos" href="ourCoaches.html" alt="Logo">
+                    <img src="images/coaches.png" style=" object-fit: contain; height:50px; margin-top: 10px;">
+                </a>
+                
+                <!--About us-->
+                <a class="navbar-logo" href="aboutus.html" alt="Logo" >
+                    <img src="images/AboutUS.png" style=" object-fit: contain; height:50px; margin-top: 10px;" >
+                </a>
+                 
+            </div>
+            <div class="row" style="  display: flex; justify-content: center; align-items: center;">
+                <div class="col-sm-12">
+                  <div class="row" style="background-color: #F99E1A; margin:30px; padding:-10px; width: 95%; display: flex;"> 
+
+                   <span style="justify-content: left; align-items: left; padding-left: 20px; margin: 10px;">
+                        <label for="mySelect">Select an option:</label>
+                        <select id="mySelect" onchange="updateTextField()">
+                        <option value="B" data-value="Bronze">Bronze</option>
+                        <option value="S" data-value="Silver">Silver</option>
+                        <option value="G" data-value="Gold">Gold</option>
+                        <option value="P" data-value="Platinum">Platinum</option>
+                        <option value="D" data-value="Diamond">Diamond</option>
+                        <option value="M" data-value="Masters" data2-value="Test2">Master</option>
+                        <option value="GM" data-value="Grandmaster">Grandmaster</option>
+                        </select>
+                    </span>
+                    
+                    <span style="padding-left: 75%; margin: 10px;">
+                        <label for="Organize">Organize by:</label>
+                        <select id="mySelect" onchange="updateTextField()">
+                        <option value="winrate" data-value="wr">winrate</option>
+                        <option value="pickrate" data-value="pr">pickrate</option>
+                        <option value="name" data-value="name">Name</option>
+                        <option value="difficulty" data-value="difficulty">Difficulty</option>
+                        </select>
+                    </span>
+                        
+                   </div>
+
+                   <div class="row" style="background-color: #405275; margin:30px; padding:-10px; width: 95%; height: 80vb; display: flex; justify-content: center; align-items: center;"> 
+
+                    
+                    
+                    <div><h1>Tier list of heros that would update based on the options chosen</h1></div>
+                    <a href="Bastion.html" class="btn btn-primary custom-btn2" style="margin:30px; padding:-10px; width: 95%; display: flex; justify-content: center; align-items: center;">example hero</a>
+                   </div>
+                </div>
+
+                
+            </div>
+
+
+        </div> 
+    </div>
+
+  
+
+
+
+</body>
+</html>

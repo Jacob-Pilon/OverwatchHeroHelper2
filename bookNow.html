@@ -61,10 +61,10 @@
         <!-- Actual new nav bar -->
         <div class="row">
             <div class="col-sm-12" style="background-color: #F99E1A; height: 100vh; width: 80px; box-sizing: border-box;" >
-                <a class="navbar-logos" href="index.html" alt="Logo" style="margin-top: 10px;">
+                <a class="navbar-logos" href="tierlist.html" alt="Logo" style="margin-top: 10px;">
                     <img src="images/list.png" style="object-fit: contain; height:50px; margin-top: 10px;">
                 </a>
-                <a class="navbar-logos" href="index.html" alt="Logo">
+                <a class="navbar-logos" href="ourCoaches.html" alt="Logo">
                     <img src="images/coaches.png" style=" object-fit: contain; height:50px; margin-top: 10px;">
                 </a>
                 
@@ -82,10 +82,11 @@
                         
                    </div>
 
-                   <div class="row" style="background-color: #405275; margin:30px; padding:-10px; width: 95%; height: 80vb; display: flex; justify-content: center; align-items: start;"> 
-                    <div class="col-lg-6" >
-                        <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Tank Coaches</h1>
-                        <div class="row"> 
+                   <div class="row" style="background-color: #405275; margin:30px; padding:-10px; width: 95%; height: 75vb; color: white;"> 
+                    <div class="col-lg-6" style="display: flex; justify-content: center; align-items: start;">
+                        
+                        <div class="row" > 
+                            <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Tank Coaches</h1>
                             <form> 
                                 <input type="radio" id="radio1" name="radios" value="option1">
                                 <label for="radio1" class="radio-image" style="background-image: url('images/tank.png');"></label>
@@ -97,7 +98,7 @@
                                 <label for="radio3" class="radio-image" style="background-image: url('images/supp.png');"></label>
                             </form>
                             
-
+<br>
                             <form>
                                 <label for="my-input">Enter your discord tag: </label>
                                 <input type="text" id="my-input" name="name">
@@ -113,6 +114,11 @@
                                 <label for="my-date">Select an available date: </label>
                                 <input type="date" id="my-date" name="selectedDate">
                             </form>
+<br>
+                            <form>
+                                <label for="video-file">Upload Video for review (optional):</label>
+                                <input type="file" id="video-file" name="video" accept="video/*">
+                            </form>
 
                         </div>
                         
@@ -120,10 +126,11 @@
                     </div>
 
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" style="display: flex; justify-content: center; align-items: start;">
 
-                        <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Available Courses </h1>
+                       
                         <div class="row"> 
+                            <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Available Courses </h1>
                             <ul class="list-group" style="width: 550px; padding-left: 1px;">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                   Monday Classes  ($30)
@@ -167,7 +174,9 @@
                     
                          
                     </div>
+                    <a href="BookingConfirmed.html" class="btn btn-primary custom-btn2" style="margin:30px; padding:-10px; width: 95%; display: flex; justify-content: center; align-items: center;">Confirm Booking!</a>
                 </div>
+                
 
                 
             </div>
