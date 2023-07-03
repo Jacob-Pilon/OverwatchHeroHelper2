@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch2 Hero Helper</title>
+
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        /* Hide the default radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+        
+        /* Style the label as an image */
+        label.radio-image {
+            display: inline-block;
+            width: 100px; /* Set the width as per your image */
+            height: 100px; /* Set the height as per your image */
+            background-size: cover; /* Scale the image to fit the label */
+            cursor: pointer;
+        }
+        
+        /* Style the label when the radio button is checked */
+        input[type="radio"]:checked + label.radio-image {
+            border: 2px solid blue; /* Add a border or any other styling */
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color: #218FFE;">
+
+<!-- Navbar -->
+    <div class="container-fluid" style="height: 80px;">
+        <div class="row" >
+            <!-- Navbar Image and text (focus on centering the text with the logo) -->
+            <nav class="navbar" style="background-color:#2f77be; border:none ; height:80px;">
+                <a class="navbar-logo" href="index.html" alt="Logo">
+                    <img src="images/logo.png" style="background-color: black; object-fit: contain; height:80px">
+                </a>
+                <span style="padding-right: 65%; color:white; ">Overwatch 2 hero helper</span>
+                <input type="text" placeholder="Search for a hero" style="width: 200px; font-size: 10px;">
+                <button type="submit">Search</button>
+                
+                    
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Actual new nav bar -->
+        <div class="row">
+            <div class="col-sm-12" style="background-color: #F99E1A; height: 100vh; width: 80px; box-sizing: border-box;" >
+                <a class="navbar-logos" href="index.html" alt="Logo" style="margin-top: 10px;">
+                    <img src="images/list.png" style="object-fit: contain; height:50px; margin-top: 10px;">
+                </a>
+                <a class="navbar-logos" href="index.html" alt="Logo">
+                    <img src="images/coaches.png" style=" object-fit: contain; height:50px; margin-top: 10px;">
+                </a>
+                
+                <!--About us-->
+                <a class="navbar-logo" href="aboutus.html" alt="Logo" >
+                    <img src="images/AboutUS.png" style=" object-fit: contain; height:50px; margin-top: 10px;" >
+                </a>
+                 
+            </div>
+            <div class="row" style="  display: flex; justify-content: center; align-items: center;">
+                <div class="col-sm-12">
+                  <div class="row" style="background-color: #F99E1A; margin:30px; padding:-10px; width: 95%; display: flex; justify-content: center; align-items: center;"> 
+
+                   <h1>Book now!</h1>
+                        
+                   </div>
+
+                   <div class="row" style="background-color: #405275; margin:30px; padding:-10px; width: 95%; height: 80vb; display: flex; justify-content: center; align-items: start;"> 
+                    <div class="col-lg-6" >
+                        <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Tank Coaches</h1>
+                        <div class="row"> 
+                            <form> 
+                                <input type="radio" id="radio1" name="radios" value="option1">
+                                <label for="radio1" class="radio-image" style="background-image: url('images/tank.png');"></label>
+                                
+                                <input type="radio" id="radio2" name="radios" value="option2">
+                                <label for="radio2" class="radio-image" style="background-image: url('images/dmg.png');"></label>
+                                
+                                <input type="radio" id="radio3" name="radios" value="option3">
+                                <label for="radio3" class="radio-image" style="background-image: url('images/supp.png');"></label>
+                            </form>
+                            
+
+                            <form>
+                                <label for="my-input">Enter your discord tag: </label>
+                                <input type="text" id="my-input" name="name">
+                            </form>
+                            <br>
+                            
+                            <form>
+                                <label for="my-input">Heroes to be coached on: </label>
+                                <input type="text" id="my-input" name="name">
+                            </form>
+                            <br>
+                            <form>
+                                <label for="my-date">Select an available date: </label>
+                                <input type="date" id="my-date" name="selectedDate">
+                            </form>
+
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="col-lg-6">
+
+                        <h1 style="text-align: center; display: flex;  justify-content: center; align-items: center;"> Available Courses </h1>
+                        <div class="row"> 
+                            <ul class="list-group" style="width: 550px; padding-left: 1px;">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  Monday Classes  ($30)
+                                  <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  Tuesday Classes ($30)
+                                  <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  Wednesday Classes ($30)
+                                  <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Thursday Classes ($30)
+                                    <span class="badge bg-primary rounded-pill">5</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Friday Classes ($30)
+                                    <span class="badge bg-primary rounded-pill">6</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Saturday Classes ($25)
+                                    <span class="badge bg-primary rounded-pill">9</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Group Classes ($50)
+                                    <span class="badge bg-primary rounded-pill">38</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Outdoor Classes ($75)
+                                    <span class="badge bg-primary rounded-pill">24</span>
+                                  </li>
+                              </ul> 
+                        </div>
+
+                        <br>
+                        <br>
+                        
+                    </div>
+                    
+                         
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </div> 
+    </div>
+
+  
+
+
+
+</body>
+</html>

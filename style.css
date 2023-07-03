@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    padding: 0;;
+}
+
+
+
+.navbar{
+    background-color: #F99E1A;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    
+}
+.navbar-logo{
+    height: 40px;
+    width: 120px;
+    object-fit: contain;
+    
+    border: none;
+}
+
+.navbar-logos{
+    margin-top: 10px;
+    object-fit: contain;
+    
+    border: none;
+}
+
+.custom-btn2{
+    font-size: 50px;
+    padding:10px 20px;
+    background-color: #0F6427 !important;
+
+}
+.custom-btn2:hover{
+    background-color:#494343  !important;
+}
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the label as an image */
+label.radio-image {
+    display: inline-block;
+    width: 100px; /* Set the width as per your image */
+    height: 100px; /* Set the height as per your image */
+    background-size: cover; /* Scale the image to fit the label */
+    cursor: pointer;
+}
+
+/* Style the label when the radio button is checked */
+input[type="radio"]:checked + label.radio-image {
+    border: 2px solid blue; /* Add a border or any other styling */
+}
